@@ -104,11 +104,7 @@ export const MapDemonstration = () => {
       height: '100%'
     },
     center: mapCenter,
-    zoom: 6,
-    options: {
-      mapId: process.env.NEXT_PUBLIC_GOOGLE_MAP_ID,
-      disableDefaultUI: true
-    }
+    zoom: 6
   }
 
   const drawPolygon = (coords: [number, number][]) => {
