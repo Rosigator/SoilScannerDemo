@@ -1,7 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
-
     const payload = await req.json();
     const response = await fetch(process.env.SOC_URL??'', {
         method: 'POST',

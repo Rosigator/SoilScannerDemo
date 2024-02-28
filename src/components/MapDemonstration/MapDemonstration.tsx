@@ -104,7 +104,10 @@ export const MapDemonstration = () => {
       height: '100%'
     },
     center: mapCenter,
-    zoom: 6
+    zoom: 6,
+    options: {
+      disableDefaultUI: true
+    }
   }
 
   const drawPolygon = (coords: [number, number][]) => {
